@@ -1,0 +1,26 @@
+<!-- app.component.html -->
+<!-- <app-header></app-header>
+<div class="main-container">
+    <app-sidebar></app-sidebar>
+    <div class="content">
+        <div class="p-grid p-nogutter">
+            <div class="p-col-12 p-md-6">
+                <app-sales-history></app-sales-history>
+            </div>
+            <div class="p-col-12 p-md-6">
+                <app-sales-categories></app-sales-categories>
+            </div>
+            <div class="p-col-12">
+                <app-top-products></app-top-products>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer> -->
+
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="main-content">
+    <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>

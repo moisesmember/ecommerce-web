@@ -1,0 +1,47 @@
+<p-card header="Product Form">
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div class="p-fluid p-formgrid p-grid">
+      <!-- Linha 1 -->
+      <div class="p-field p-col-12 p-md-6">
+        <label for="description">Nome</label>
+        <input id="description" type="text" pInputText formControlName="description" autocomplete />
+      </div>
+
+      <div class="p-field p-col-12 p-md-6">
+        <label for="price">Preço R$</label>
+        <input id="price" type="number" pInputText formControlName="price" />
+      </div>
+
+      <!-- Linha 2 -->
+      <div class="p-field p-col-12 p-md-6">
+        <label for="amount">Quantidade</label>
+        <input id="amount" type="number" pInputText formControlName="amount" />
+      </div>
+
+      <div class="p-field p-col-12 p-md-6">
+        <label for="img">Imagem do Produto</label>
+        <input id="img" type="text" pInputText formControlName="img" />
+      </div>
+
+      <!-- Linha 3 -->
+      <div class="p-field p-col-12 p-md-6">
+        <label for="id">Product ID</label>
+        <input id="id" type="number" pInputText formControlName="id" />
+      </div>
+
+      <div class="p-field p-col-12 p-md-6">
+        <label for="category">Categoria</label>
+        <p-dropdown 
+          [options]="categories" 
+          formControlName="category" 
+          placeholder="Selecionar a categoria">
+        </p-dropdown>
+      </div>
+
+      <!-- Linha 4 -->
+      <div class="p-col-12">
+        <button pButton type="submit" label="Salvar"></button>
+      </div>
+    </div>
+  </form>
+</p-card>

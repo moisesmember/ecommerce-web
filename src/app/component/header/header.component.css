@@ -1,0 +1,10 @@
+.ui-menubar-custom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.ui-menubar-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
